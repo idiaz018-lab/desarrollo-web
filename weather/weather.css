@@ -1,0 +1,165 @@
+/* Layout básico: full height con footer al fondo */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #74b9ff, #0984e3); /* Degradado azul */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1 0 auto;
+    padding: 2rem 1rem;
+    display: flex;            /* centra la card dentro del main */
+    align-items: center;      /* centrado vertical */
+    justify-content: center;  /* centrado horizontal */
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Opcional: estilo simple para header/footer */
+.header {
+    background: #0d6efd;
+    color: #fff;
+    padding: 1rem 0;
+}
+.footer {
+    background: #f1f1f1;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.weather-app {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#city-input {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    font-size: 1em;
+    width: 70%;
+    color: #333;
+}
+
+#search-button {
+    padding: 10px 15px;
+    background-color: #ffeaa7; /* Amarillo suave */
+    color: #333;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #fed330;
+}
+
+/* Estilos para la sección de clima actual */
+.current-weather {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.city-name {
+    font-size: 2em;
+    margin: 0;
+}
+
+.temperature {
+    font-size: 4em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.description, .details p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+/* Estilos para el pronóstico extendido */
+.forecast {
+    padding: 20px 0;
+    text-align: left;
+}
+
+.forecast h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 10px;
+}
+
+.day-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.day-card strong {
+    flex: 1;
+}
+
+.day-card span {
+    flex: 2;
+    text-align: right;
+}
+
+.error-message {
+    color: #ff7675;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+/* Iconos de clima (se puede usar Font Awesome o una imagen real) */
+.weather-icon {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+    color: rgba(0, 0, 0, 0.7);
+}
